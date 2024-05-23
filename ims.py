@@ -5,6 +5,8 @@ except ImportError:
     import score_image
 default_columns = ['file','mtime','timestamp','score']
 import time
+from PIL import Image 
+Image.MAX_IMAGE_PIXELS = 10000000000000
 
     
 def calc_score(f, fpath, mtime):
